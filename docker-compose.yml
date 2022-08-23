@@ -24,6 +24,7 @@ services:
       - http.compression_level=3
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
       
+      # SSL, 인증기능 비활성화
       - xpack.security.enabled=false
       - xpack.security.enrollment.enabled=false
       - xpack.security.transport.ssl.enabled=false
